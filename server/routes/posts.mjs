@@ -6,10 +6,12 @@ const router = express.Router();
 
 // Get a list of 50 posts
 router.get("/", async (req, res) => {
+  console.log('get');
   let collection = await db.collection("posts");
   let results = await collection.find({})
     .limit(50)
     .toArray();
+    console.log(`results: ${results}`);
 
   res.send(results).status(200);
 });
