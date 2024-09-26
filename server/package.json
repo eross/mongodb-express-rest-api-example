@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.mjs",
+    "start": "nodemon index.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
     "format": "prettier --single-quote --check .",
@@ -21,7 +21,7 @@
     "eslint": "^8.0.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.2.3",
-    "nodemon": "^2.0.12",
+    "nodemon": "^2.0.22",
     "prettier": "^2.4.1"
   },
   "husky": {
